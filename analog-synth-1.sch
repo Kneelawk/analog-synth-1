@@ -1456,8 +1456,6 @@ Wire Wire Line
 Connection ~ 10750 4500
 Text Notes 1200 4500 0    60   ~ 0
 C9's value has a drastic\neffect on the VCO's frequency.
-Text Notes 1000 7350 0    60   ~ 0
-RV3 and RV4 are to try\nto compensate for C9's\nvalue.
 Wire Wire Line
 	2700 5800 2850 5800
 Wire Wire Line
@@ -1587,4 +1585,6 @@ Wire Wire Line
 	1550 4900 1500 4900
 Wire Wire Line
 	1500 4900 1500 5050
+Text Notes 3100 3800 0    60   ~ 0
+RV1 is exponential product control.\nRV2 is product control.\nRV3 and RV4 are sum controls.
 $EndSCHEMATC
