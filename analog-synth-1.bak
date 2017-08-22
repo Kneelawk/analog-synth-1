@@ -37,7 +37,7 @@ encoding utf-8
 Sheet 1 1
 Title "Analog Synth 1"
 Date "2017-07-31"
-Rev "1.0.12"
+Rev "1.0.13"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -519,7 +519,7 @@ Wire Notes Line
 	5650 3850 5650 550 
 Text Notes 7800 3600 0    157  ~ 0
 Exponential Converter
-Text GLabel 1400 5600 0    60   Input ~ 0
+Text GLabel 1300 5800 0    60   Input ~ 0
 Exp-CV
 $Comp
 L R R10
@@ -532,9 +532,6 @@ F 3 "" H 1750 5600 50  0001 C CNN
 	1    1750 5600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1400 5600 1600 5600
-Connection ~ 1500 5600
 $Comp
 L LM741 U5
 U 1 1 5970056F
@@ -1383,12 +1380,12 @@ Wire Wire Line
 $Comp
 L POT_TRIM RV4
 U 1 1 598CE1E8
-P 1500 5200
-F 0 "RV4" H 1430 5246 50  0000 R CNN
-F 1 "10k" H 1430 5155 50  0000 R CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296Y" H 1500 5200 50  0001 C CNN
-F 3 "" H 1500 5200 50  0001 C CNN
-	1    1500 5200
+P 1350 5400
+F 0 "RV4" H 1280 5446 50  0000 R CNN
+F 1 "10k" H 1280 5355 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296Y" H 1350 5400 50  0001 C CNN
+F 3 "" H 1350 5400 50  0001 C CNN
+	1    1350 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1406,10 +1403,6 @@ Wire Wire Line
 	2150 5300 2150 5200
 Wire Wire Line
 	2150 5200 2050 5200
-Wire Wire Line
-	1750 5200 1650 5200
-Wire Wire Line
-	1500 5350 1500 5600
 $Comp
 L POT_TRIM RV3
 U 1 1 598CEAE4
@@ -1459,9 +1452,7 @@ $EndComp
 Wire Wire Line
 	1950 4900 1850 4900
 Wire Wire Line
-	1550 4900 1500 4900
-Wire Wire Line
-	1500 4900 1500 5050
+	1350 4900 1550 4900
 Text Notes 3100 3800 0    60   ~ 0
 RV1 is exponential product control.\nRV2 is product control.\nRV3 and RV4 are sum controls.
 Wire Wire Line
@@ -1474,7 +1465,7 @@ U 1 1 599284D9
 P 1350 3850
 F 0 "RV5" V 1236 3850 50  0000 C CNN
 F 1 "10k" V 1145 3850 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Alps_RK09L_Sleve_Single_Horizontal" H 1350 3850 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK09L_Sleve_Single_Horizontal_Custom" H 1350 3850 50  0001 C CNN
 F 3 "" H 1350 3850 50  0001 C CNN
 	1    1350 3850
 	0    -1   -1   0   
@@ -1678,4 +1669,19 @@ Wire Wire Line
 	2200 3450 2200 3500
 Wire Wire Line
 	2200 3500 2250 3500
+Wire Wire Line
+	1750 5200 1550 5200
+Wire Wire Line
+	1550 5200 1550 5600
+Wire Wire Line
+	1550 5600 1600 5600
+Wire Wire Line
+	1500 5400 1550 5400
+Connection ~ 1550 5400
+Wire Wire Line
+	1350 5550 1350 5800
+Wire Wire Line
+	1350 5800 1300 5800
+Wire Wire Line
+	1350 5250 1350 4900
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Mon 14 Aug 2017 05:04:53 PM PDT
+update=Mon 21 Aug 2017 03:35:26 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,13 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/jedidiah/Documents/KiCad/kicad-libraries/eurocad/eurocad
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
