@@ -37,7 +37,7 @@ encoding utf-8
 Sheet 1 1
 Title "Analog Synth 1"
 Date "2017-07-31"
-Rev "1.0.13"
+Rev "1.0.14"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -778,13 +778,13 @@ Wire Wire Line
 Wire Wire Line
 	4150 5850 4150 5800
 Wire Notes Line
-	850  4250 5800 4250
+	750  4250 5800 4250
 Wire Notes Line
 	5800 4250 5800 7500
 Wire Notes Line
-	5800 7500 850  7500
+	5800 7500 750  7500
 Wire Notes Line
-	850  7500 850  4250
+	750  7500 750  4250
 Text Notes 5000 6950 0    157  ~ 0
 VCO
 Text GLabel 6650 4400 0    60   Input ~ 0
@@ -1241,7 +1241,7 @@ U 1 1 5976EB91
 P 10200 5100
 F 0 "C12" H 10318 5146 50  0000 L CNN
 F 1 "100uf" H 10318 5055 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 10238 4950 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 10238 4950 50  0001 C CNN
 F 3 "" H 10200 5100 50  0001 C CNN
 	1    10200 5100
 	1    0    0    -1  
@@ -1265,7 +1265,7 @@ U 1 1 5976EF74
 P 10650 5100
 F 0 "C13" H 10768 5146 50  0000 L CNN
 F 1 "100uf" H 10768 5055 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 10688 4950 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 10688 4950 50  0001 C CNN
 F 3 "" H 10650 5100 50  0001 C CNN
 	1    10650 5100
 	1    0    0    -1  
@@ -1304,7 +1304,7 @@ U 1 1 5976F6E4
 P 10400 5500
 F 0 "C14" H 10518 5546 50  0000 L CNN
 F 1 "100uf" H 10518 5455 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 10438 5350 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 10438 5350 50  0001 C CNN
 F 3 "" H 10400 5500 50  0001 C CNN
 	1    10400 5500
 	1    0    0    -1  
