@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:analog-synth-1-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1200 1200 1150 550 
+S 1350 1400 1150 550 
 U 5C85AB83
 F0 "Analog Synth 1 Ports" 50
 F1 "analog-synth-1-ports.sch" 50
