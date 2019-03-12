@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:analog-synth-1-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -124,4 +125,15 @@ Wire Wire Line
 Wire Wire Line
 	2800 2400 2250 2400
 Connection ~ 2250 2400
+$Comp
+L custom-components:PJ301M-12 J?
+U 1 1 5C870E3E
+P 4650 1950
+F 0 "J?" H 4656 2325 50  0000 C CNN
+F 1 "PJ301M-12" H 4656 2234 50  0000 C CNN
+F 2 "" H 4650 1950 50  0000 C CNN
+F 3 "" H 4650 1950 50  0000 C CNN
+	1    4650 1950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
