@@ -278,23 +278,155 @@ Wire Wire Line
 $Comp
 L Amplifier_Operational:TL084 U?
 U 3 1 5C878E0C
-P 5200 2100
-F 0 "U?" H 5200 2467 50  0000 C CNN
-F 1 "TL084" H 5200 2376 50  0000 C CNN
-F 2 "" H 5150 2200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5250 2300 50  0001 C CNN
-	3    5200 2100
+P 7200 1950
+F 0 "U?" H 7200 2317 50  0000 C CNN
+F 1 "TL084" H 7200 2226 50  0000 C CNN
+F 2 "" H 7150 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7250 2150 50  0001 C CNN
+	3    7200 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:TL084 U?
 U 4 1 5C878EAE
-P 5200 3650
-F 0 "U?" H 5200 4017 50  0000 C CNN
-F 1 "TL084" H 5200 3926 50  0000 C CNN
-F 2 "" H 5150 3750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5250 3850 50  0001 C CNN
-	4    5200 3650
+P 7200 3050
+F 0 "U?" H 7200 3417 50  0000 C CNN
+F 1 "TL084" H 7200 3326 50  0000 C CNN
+F 2 "" H 7150 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7250 3250 50  0001 C CNN
+	4    7200 3050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6900 2050 6800 2050
+Wire Wire Line
+	6800 2050 6800 2350
+Wire Wire Line
+	6800 2350 7600 2350
+Wire Wire Line
+	7600 2350 7600 1950
+Wire Wire Line
+	7600 1950 7500 1950
+Wire Wire Line
+	6900 3150 6800 3150
+Wire Wire Line
+	6800 3150 6800 3450
+Wire Wire Line
+	6800 3450 7600 3450
+Wire Wire Line
+	7600 3450 7600 3050
+Wire Wire Line
+	7600 3050 7500 3050
+Text GLabel 6300 1850 0    50   Input ~ 0
+Triangle-Sample
+Text GLabel 6300 2950 0    50   Input ~ 0
+Square-Sample
+Wire Wire Line
+	6300 1850 6900 1850
+Wire Wire Line
+	6300 2950 6900 2950
+Text GLabel 7900 1950 2    50   Input ~ 0
+Triangle
+Wire Wire Line
+	7900 1950 7600 1950
+Connection ~ 7600 1950
+Text GLabel 7900 3050 2    50   Input ~ 0
+Square
+Wire Wire Line
+	7900 3050 7600 3050
+Connection ~ 7600 3050
+$Comp
+L Amplifier_Operational:TL084 U?
+U 3 1 5C87D386
+P 7200 5000
+F 0 "U?" H 7200 5367 50  0000 C CNN
+F 1 "TL084" H 7200 5276 50  0000 C CNN
+F 2 "" H 7150 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7250 5200 50  0001 C CNN
+	3    7200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5C87DFED
+P 7150 5600
+F 0 "RV?" V 6943 5600 50  0000 C CNN
+F 1 "R_POT_TRIM" V 7034 5600 50  0000 C CNN
+F 2 "" H 7150 5600 50  0001 C CNN
+F 3 "~" H 7150 5600 50  0001 C CNN
+	1    7150 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 5600 7600 5600
+Wire Wire Line
+	7600 5600 7600 5000
+Wire Wire Line
+	7600 5000 7500 5000
+Wire Wire Line
+	7000 5600 6800 5600
+Wire Wire Line
+	6800 5600 6800 5100
+Wire Wire Line
+	6800 5100 6900 5100
+Wire Wire Line
+	7150 5750 7600 5750
+Wire Wire Line
+	7600 5750 7600 5600
+Connection ~ 7600 5600
+$Comp
+L power:GND #PWR?
+U 1 1 5C880099
+P 6650 4800
+F 0 "#PWR?" H 6650 4550 50  0001 C CNN
+F 1 "GND" H 6655 4627 50  0000 C CNN
+F 2 "" H 6650 4800 50  0001 C CNN
+F 3 "" H 6650 4800 50  0001 C CNN
+	1    6650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4900 6800 4900
+Wire Wire Line
+	6800 4900 6800 4700
+Wire Wire Line
+	6800 4700 6650 4700
+Wire Wire Line
+	6650 4700 6650 4800
+$Comp
+L Device:R R?
+U 1 1 5C880E42
+P 6350 5100
+F 0 "R?" V 6143 5100 50  0000 C CNN
+F 1 "R" V 6234 5100 50  0000 C CNN
+F 2 "" V 6280 5100 50  0001 C CNN
+F 3 "~" H 6350 5100 50  0001 C CNN
+	1    6350 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C880EB3
+P 6350 5600
+F 0 "R?" V 6143 5600 50  0000 C CNN
+F 1 "R" V 6234 5600 50  0000 C CNN
+F 2 "" V 6280 5600 50  0001 C CNN
+F 3 "~" H 6350 5600 50  0001 C CNN
+	1    6350 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 5100 6800 5100
+Connection ~ 6800 5100
+Wire Wire Line
+	6500 5600 6800 5600
+Connection ~ 6800 5600
+Text GLabel 6000 5100 0    50   Input ~ 0
+CV
+Wire Wire Line
+	6000 5100 6200 5100
+Text GLabel 6000 5600 0    50   Input ~ 0
+CV1
+Wire Wire Line
+	6000 5600 6200 5600
 $EndSCHEMATC

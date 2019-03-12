@@ -335,4 +335,103 @@ Square
 Wire Wire Line
 	7900 3050 7600 3050
 Connection ~ 7600 3050
+$Comp
+L Amplifier_Operational:TL084 U?
+U 3 1 5C87D386
+P 7200 5000
+F 0 "U?" H 7200 5367 50  0000 C CNN
+F 1 "TL084" H 7200 5276 50  0000 C CNN
+F 2 "" H 7150 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7250 5200 50  0001 C CNN
+	3    7200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5C87DFED
+P 7150 5600
+F 0 "RV?" V 6943 5600 50  0000 C CNN
+F 1 "R_POT_TRIM" V 7034 5600 50  0000 C CNN
+F 2 "" H 7150 5600 50  0001 C CNN
+F 3 "~" H 7150 5600 50  0001 C CNN
+	1    7150 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 5600 7600 5600
+Wire Wire Line
+	7600 5600 7600 5000
+Wire Wire Line
+	7600 5000 7500 5000
+Wire Wire Line
+	7000 5600 6800 5600
+Wire Wire Line
+	6800 5600 6800 5100
+Wire Wire Line
+	6800 5100 6900 5100
+Wire Wire Line
+	7150 5750 7600 5750
+Wire Wire Line
+	7600 5750 7600 5600
+Connection ~ 7600 5600
+$Comp
+L power:GND #PWR?
+U 1 1 5C880099
+P 6650 4800
+F 0 "#PWR?" H 6650 4550 50  0001 C CNN
+F 1 "GND" H 6655 4627 50  0000 C CNN
+F 2 "" H 6650 4800 50  0001 C CNN
+F 3 "" H 6650 4800 50  0001 C CNN
+	1    6650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4900 6800 4900
+Wire Wire Line
+	6800 4900 6800 4700
+Wire Wire Line
+	6800 4700 6650 4700
+Wire Wire Line
+	6650 4700 6650 4800
+$Comp
+L Device:R R?
+U 1 1 5C880E42
+P 6350 5100
+F 0 "R?" V 6143 5100 50  0000 C CNN
+F 1 "R" V 6234 5100 50  0000 C CNN
+F 2 "" V 6280 5100 50  0001 C CNN
+F 3 "~" H 6350 5100 50  0001 C CNN
+	1    6350 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C880EB3
+P 6350 5600
+F 0 "R?" V 6143 5600 50  0000 C CNN
+F 1 "R" V 6234 5600 50  0000 C CNN
+F 2 "" V 6280 5600 50  0001 C CNN
+F 3 "~" H 6350 5600 50  0001 C CNN
+	1    6350 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 5100 6800 5100
+Connection ~ 6800 5100
+Wire Wire Line
+	6500 5600 6800 5600
+Connection ~ 6800 5600
+Text GLabel 6000 5100 0    50   Input ~ 0
+CV
+Wire Wire Line
+	6000 5100 6200 5100
+Text GLabel 6000 5600 0    50   Input ~ 0
+CV1
+Wire Wire Line
+	6000 5600 6200 5600
+Text GLabel 7800 5000 2    50   Input ~ 0
+VIN
+Wire Wire Line
+	7800 5000 7600 5000
+Connection ~ 7600 5000
 $EndSCHEMATC
