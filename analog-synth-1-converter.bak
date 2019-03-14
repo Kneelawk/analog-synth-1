@@ -1,0 +1,367 @@
+EESchema Schematic File Version 4
+LIBS:analog-synth-1-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "Analog Synth 1 Converter"
+Date "2019-03-12"
+Rev "1.1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 5C89B3C5
+P 3450 3400
+F 0 "Q?" H 3641 3446 50  0000 L CNN
+F 1 "2N3904" H 3641 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3650 3325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3450 3400 50  0001 L CNN
+	1    3450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 5C89B4F1
+P 4700 3400
+F 0 "Q?" H 4891 3446 50  0000 L CNN
+F 1 "2N3904" H 4891 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4900 3325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4700 3400 50  0001 L CNN
+	1    4700 3400
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	3250 3200 4900 3200
+Wire Notes Line
+	4900 3200 4900 3600
+Wire Notes Line
+	4900 3600 3250 3600
+Wire Notes Line
+	3250 3600 3250 3200
+Text Notes 3750 3150 0    50   ~ 0
+Thermal Bonding
+Text HLabel 2400 3400 0    50   Input ~ 0
+CV
+$Comp
+L Device:R R?
+U 1 1 5C89B5B0
+P 3550 2850
+F 0 "R?" H 3620 2896 50  0000 L CNN
+F 1 "1M" H 3620 2805 50  0000 L CNN
+F 2 "" V 3480 2850 50  0001 C CNN
+F 3 "~" H 3550 2850 50  0001 C CNN
+	1    3550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C89B68B
+P 3550 2500
+F 0 "#PWR?" H 3550 2350 50  0001 C CNN
+F 1 "+5V" H 3565 2673 50  0000 C CNN
+F 2 "" H 3550 2500 50  0001 C CNN
+F 3 "" H 3550 2500 50  0001 C CNN
+	1    3550 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2500 3550 2700
+Wire Wire Line
+	3550 3000 3550 3100
+Wire Wire Line
+	3550 3600 3550 3750
+Wire Wire Line
+	3550 3750 4100 3750
+Wire Wire Line
+	4600 3750 4600 3600
+$Comp
+L Device:R R?
+U 1 1 5C89B709
+P 4100 4200
+F 0 "R?" H 4170 4246 50  0000 L CNN
+F 1 "1k" H 4170 4155 50  0000 L CNN
+F 2 "" V 4030 4200 50  0001 C CNN
+F 3 "~" H 4100 4200 50  0001 C CNN
+	1    4100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4050 4100 3750
+Connection ~ 4100 3750
+Wire Wire Line
+	4100 3750 4600 3750
+$Comp
+L Amplifier_Operational:TL084 U1
+U 1 1 5C89B872
+P 3250 4650
+F 0 "U1" H 3250 4283 50  0000 C CNN
+F 1 "TL084" H 3250 4374 50  0000 C CNN
+F 2 "" H 3200 4750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 3300 4850 50  0001 C CNN
+	1    3250 4650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3550 4650 3800 4650
+Wire Wire Line
+	4100 4650 4100 4350
+$Comp
+L Device:C C?
+U 1 1 5C89BA5A
+P 3250 4150
+F 0 "C?" V 2998 4150 50  0000 C CNN
+F 1 "1nf" V 3089 4150 50  0000 C CNN
+F 2 "" H 3288 4000 50  0001 C CNN
+F 3 "~" H 3250 4150 50  0001 C CNN
+	1    3250 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 4150 3800 4150
+Wire Wire Line
+	3800 4150 3800 4650
+Connection ~ 3800 4650
+Wire Wire Line
+	3800 4650 4100 4650
+Wire Wire Line
+	3550 3100 2600 3100
+Wire Wire Line
+	2600 3100 2600 4150
+Wire Wire Line
+	2600 4550 2950 4550
+Connection ~ 3550 3100
+Wire Wire Line
+	3550 3100 3550 3200
+Wire Wire Line
+	3100 4150 2600 4150
+Connection ~ 2600 4150
+Wire Wire Line
+	2600 4150 2600 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5C89C1AD
+P 2600 4900
+F 0 "#PWR?" H 2600 4650 50  0001 C CNN
+F 1 "GND" H 2605 4727 50  0000 C CNN
+F 2 "" H 2600 4900 50  0001 C CNN
+F 3 "" H 2600 4900 50  0001 C CNN
+	1    2600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4900 2600 4750
+Wire Wire Line
+	2600 4750 2950 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5C89C3D6
+P 5100 3550
+F 0 "#PWR?" H 5100 3300 50  0001 C CNN
+F 1 "GND" H 5105 3377 50  0000 C CNN
+F 2 "" H 5100 3550 50  0001 C CNN
+F 3 "" H 5100 3550 50  0001 C CNN
+	1    5100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
+U 2 1 5C89C8D0
+P 6050 3500
+F 0 "U1" H 6050 3867 50  0000 C CNN
+F 1 "TL084" H 6050 3776 50  0000 C CNN
+F 2 "" H 6000 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6100 3700 50  0001 C CNN
+	2    6050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3400 5100 3400
+Wire Wire Line
+	5100 3550 5100 3400
+Connection ~ 5100 3400
+Wire Wire Line
+	5100 3400 4900 3400
+Wire Wire Line
+	4600 3200 4600 3100
+Wire Wire Line
+	4600 3100 5500 3100
+Wire Wire Line
+	5500 3100 5500 3600
+Wire Wire Line
+	5500 3600 5750 3600
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5C89D0E0
+P 6050 4050
+F 0 "RV?" V 5843 4050 50  0000 C CNN
+F 1 "100k" V 5934 4050 50  0000 C CNN
+F 2 "" H 6050 4050 50  0001 C CNN
+F 3 "~" H 6050 4050 50  0001 C CNN
+	1    6050 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4050 5500 4050
+Wire Wire Line
+	5500 4050 5500 3600
+Connection ~ 5500 3600
+Wire Wire Line
+	6200 4050 6600 4050
+Wire Wire Line
+	6600 4050 6600 3500
+Wire Wire Line
+	6600 3500 6350 3500
+Wire Wire Line
+	6050 4200 5500 4200
+Wire Wire Line
+	5500 4200 5500 4050
+Connection ~ 5500 4050
+Text HLabel 8400 3350 2    50   Output ~ 0
+Exponential-CV
+Wire Wire Line
+	3250 3400 2400 3400
+$Comp
+L Amplifier_Operational:TL084 U1
+U 4 1 5C8A536D
+P 7700 3350
+F 0 "U1" H 7700 3717 50  0000 C CNN
+F 1 "TL084" H 7700 3626 50  0000 C CNN
+F 2 "" H 7650 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7750 3550 50  0001 C CNN
+	4    7700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8A61D3
+P 7700 3850
+F 0 "R?" V 7493 3850 50  0000 C CNN
+F 1 "10k" V 7584 3850 50  0000 C CNN
+F 2 "" V 7630 3850 50  0001 C CNN
+F 3 "~" H 7700 3850 50  0001 C CNN
+	1    7700 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8A625A
+P 7300 4200
+F 0 "R?" H 7370 4246 50  0000 L CNN
+F 1 "10k" H 7370 4155 50  0000 L CNN
+F 2 "" V 7230 4200 50  0001 C CNN
+F 3 "~" H 7300 4200 50  0001 C CNN
+	1    7300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3450 7300 3450
+Wire Wire Line
+	7300 3450 7300 3850
+Wire Wire Line
+	7300 3850 7550 3850
+Connection ~ 7300 3850
+Wire Wire Line
+	7300 3850 7300 4050
+Wire Wire Line
+	7850 3850 8100 3850
+Wire Wire Line
+	8100 3850 8100 3350
+Wire Wire Line
+	8100 3350 8000 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5C8A7985
+P 7300 4450
+F 0 "#PWR?" H 7300 4200 50  0001 C CNN
+F 1 "GND" H 7305 4277 50  0000 C CNN
+F 2 "" H 7300 4450 50  0001 C CNN
+F 3 "" H 7300 4450 50  0001 C CNN
+	1    7300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4450 7300 4350
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5C8A8DB2
+P 6900 3250
+F 0 "RV?" H 6830 3296 50  0000 R CNN
+F 1 "10k" H 6830 3205 50  0000 R CNN
+F 2 "" H 6900 3250 50  0001 C CNN
+F 3 "~" H 6900 3250 50  0001 C CNN
+	1    6900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8A8E4D
+P 6900 2850
+F 0 "R?" H 6970 2896 50  0000 L CNN
+F 1 "1k" H 6970 2805 50  0000 L CNN
+F 2 "" V 6830 2850 50  0001 C CNN
+F 3 "~" H 6900 2850 50  0001 C CNN
+	1    6900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5C8A8EB9
+P 6900 2450
+F 0 "RV?" V 6693 2450 50  0000 C CNN
+F 1 "10k" V 6784 2450 50  0000 C CNN
+F 2 "" H 6900 2450 50  0001 C CNN
+F 3 "~" H 6900 2450 50  0001 C CNN
+	1    6900 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C8A8FD1
+P 6600 2300
+F 0 "#PWR?" H 6600 2150 50  0001 C CNN
+F 1 "+12V" H 6615 2473 50  0000 C CNN
+F 2 "" H 6600 2300 50  0001 C CNN
+F 3 "" H 6600 2300 50  0001 C CNN
+	1    6600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2300 6600 2450
+Wire Wire Line
+	6600 2450 6750 2450
+Wire Wire Line
+	7050 2450 7200 2450
+Wire Wire Line
+	6900 2600 6900 2700
+Wire Wire Line
+	6900 3000 6900 3100
+Wire Wire Line
+	6900 3400 6900 3500
+Wire Wire Line
+	6900 3500 6600 3500
+Connection ~ 6600 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5C8AD153
+P 7200 2600
+F 0 "#PWR?" H 7200 2350 50  0001 C CNN
+F 1 "GND" H 7205 2427 50  0000 C CNN
+F 2 "" H 7200 2600 50  0001 C CNN
+F 3 "" H 7200 2600 50  0001 C CNN
+	1    7200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2600 7200 2450
+Wire Wire Line
+	7400 3250 7050 3250
+Wire Wire Line
+	8400 3350 8100 3350
+Connection ~ 8100 3350
+$EndSCHEMATC
