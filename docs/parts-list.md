@@ -5,6 +5,7 @@ Here are some of those parts:
 
 * [LED_RCBG](#led_rcbg)
 * [PJ398SM](#pj398sm)
+* [Conn_02x08_Odd_Even](#conn_02x08_odd_even)
 
 # Part Specifications
 
@@ -25,3 +26,11 @@ The PJ301M-12 has the same footprint as the PJ398SM.
 ### URLs
 Product URL:
 https://www.thonk.co.uk/shop/thonkiconn/
+
+## Conn_02x08_Odd_Even
+### Product Notes
+This jack is the 16-pin shrouded eurorack header.
+
+### URLS
+Product URL:
+https://store.synthrotek.com/16-Pin_Keyed_Shrouded_Eurorack_Power_Header
